@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegistrationActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image2"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="REGISTER"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:textSize="40dp"
+
+            android:gravity="center"
+
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="40dp"
+            >
+            <!--            app:boxStrokeWidthFocused="0dp"-->
+            <!--            app:boxStrokeWidth="0dp"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Name"
+                android:textSize="18dp"
+                android:textColor="@color/pink"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="20dp"
+            >
+            <!--       nicheni line kadhava     app:boxStrokeWidthFocused="0dp"-->
+            <!--            app:boxStrokeWidth="0dp"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:textSize="18dp"
+                android:textColor="@color/pink"
+                android:background="@android:color/transparent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="20dp"
+            >
+            <!--            app:boxStrokeWidthFocused="0dp"-->
+            <!--            app:boxStrokeWidth="0dp"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textSize="18dp"
+                android:textColor="@color/pink"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            >
+            <!--            app:boxStrokeWidthFocused="0dp"-->
+            <!--            app:boxStrokeWidth="0dp"-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18dp"
+                android:textColor="@color/pink"
+                android:drawableRight="@drawable/eye"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Submit"
+            android:textSize="25dp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#009688"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Already Have An account? Sign In"
+            android:textSize="10dp"
+            android:textColor="#673AB7"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="175dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
